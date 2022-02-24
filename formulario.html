@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/icon/css/all.min.css" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/formulario.css" />
+  </head>
+  <body>
+    <header id="idHeader" class="header header-nav"></header>
+
+    <main class="main">
+      <section class="home-grid-container"></section>
+      <dialog>hello</dialog>
+      <div class="container-form">
+        <form action="/index.html">
+          <label for="fname" aria-required="true">Nombre</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+            class="custom-input"
+          />
+
+          <label for="lname">Apellido</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+            required
+            class="custom-input"
+          />
+          <label for="lcomentario">Comentario</label>
+          <textarea required class="custom-input"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+
+    <footer id="idFooter" class="footer site-footer"></footer>
+
+    <script src="./script/main.js" defer></script>
+  </body>
+</html>

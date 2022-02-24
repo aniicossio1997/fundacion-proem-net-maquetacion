@@ -1,0 +1,141 @@
+footer {
+  box-sizing: border-box;
+  max-width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  align-content: center;
+
+  align-items: center;
+  flex-shrink: 0;
+  /* border-top: 2px solid #f0ecec; */
+  border-top: 1px solid #ccc;
+}
+footer > div {
+  max-width: 100%;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.social-icons a.facebook i:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+.social-icons a.twitter i:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.social-icons a.instagram i:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: #fff;
+}
+.footer-text {
+  color: #292828;
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 550px) {
+  .footer {
+    flex-direction: row;
+  }
+  .footer-text {
+    padding-top: 5px;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    margin-top: 20px;
+  }
+}
+
+.social-icons a > i {
+  background: #0079ff;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.3em;
+  box-sizing: border-box;
+
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.social-icons a > i:hover {
+  animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
