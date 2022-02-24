@@ -2,4 +2,4 @@
 
 ### proyecto de maquetacion para fundacion Proem .net
 
-Ver el sitio [Go](https://flamboyant-beaver-30587d.netlify.app/)
+Ver el sitio [Go](https://6218152717c4561993b0979f--wizardly-goodall-5ef975.netlify.app/)
